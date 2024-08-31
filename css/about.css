@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Mukta", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
+    width: 100%;
+}
+
+
+/* nav bar */
+nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    height: 70px;
+}
+nav ul{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+nav a:hover{
+    background-color: #f0f0f0;
+    color: #478181;
+}
+nav .sepcial{
+    margin-right: auto;
+    padding: 10px;
+}
+.sidebar{
+    position: fixed;
+    top: 0; 
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+.hello::after {
+    content: \f130; /* Unicode value of the Font Awesome icon */
+    font-family: "Font Awesome 5 Free"; /* Specify the correct Font Awesome font family */
+    font-weight: 900; /* Use the appropriate weight depending on the icon (regular, solid, etc.) */
+    margin-left: 5px; /* Adjusts spacing between the content and the icon */
+}
+.active{
+    color: #3ca59d !important;
+}
+
+@media(max-width: 800px){
+    .hideOnMobile{
+      display: none;
+}
+.menu-button{
+      display: block;
+}
+}
+@media(max-width: 400px){
+.sidebar{
+      width: 100%;
+}
+}
+
+
+/* section */
+.intro{
+    background-color: #F8F9FA;
+    min-height: 80vh;
+    position: relative;
+}
+.title{
+    font-size: 70px;
+}
+.a1{
+    text-decoration: none;
+    color: #f23a2e;
+    z-index: 2;
+}
+.a1:hover{
+    color: #B8180C;
+}
+
+
+/* the podcaster  */
+.icons{
+    color: #f23a2e;
+}
+.icons:hover{
+    color: #B8180C;
+}
+/* the sub footer */
+.subfooter{
+    background-image: url(/img/hero_bg_1.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+min-height: 80vh;
+position: relative;
+background-attachment: scroll;
+}
+.subfooter::before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.2); /* Black overlay with 50% opacity */
+z-index: 1; /* Ensure the overlay is above the background image */
+}
+.input{
+height: 60px;
+width: 45%;
+border-radius:3px;
+border-top:1px solid #ddd;
+border-bottom:1px solid #ddd;
+border-left:1px solid #ddd;
+border-right:1px solid transparent;
+
+}
+.input::placeholder{
+font-style: italic;
+font-size: 20px; 
+opacity: 0.7; 
+padding-left:   20px;
+}
+.send{
+height: 60px;
+width: 8%;
+border: 1px solid transparent;
+padding:5px 10px;
+background-color: #EB1C0F;
+border-radius: 3px;
+position: relative;
+left:-5px;
+color: white;
+}
+/* footer */
+footer{
+    background-color: #333333;
+    padding: 10% 5%;
+}
+.footer-ul{
+    list-style: none;
+    padding: 0;
+
+}
+.list{
+   margin-bottom: 10px; 
+}
+.list a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #999999;
+
+}
+.list a:hover{
+    color: white;
+}
+.inputx{
+    width: 100%;
+    border-radius: 4px;
+    height: 45px;
+    margin-bottom: 10px;
+}
+.inputx::placeholder{
+    padding-left: 10px;
+}
+.end{
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #EB1C0F;
+    color: white;
+    border: 1px solid transparent;
+}
+.text-white{
+    color: white !important;
+}

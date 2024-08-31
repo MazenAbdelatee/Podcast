@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast register</title>
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootsrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="css/loginRegister.css">
+</head>
+<body>
+    
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+            <li ><a href="">Home</a></li>
+            <li ><a href="">About</a></li>
+            <li ><a href="">contact</a></li>
+            <li ><a href="">Login/Register</a></li>
+        </ul>
+        <ul>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+            <li class="sepcial"><a href=""><h2 class="fw-lighter ">Podcast</h2></a>
+            </li>
+            <li class="hideOnMobile"><a href="">Home</a></li>
+            <li class="hideOnMobile"><a href="">About</a></li>
+            <li class="hideOnMobile"><a href="">contact</a></li>
+            <li class="hideOnMobile active"><a href="" class="active ">Login/Register</a></li>
+        </ul>
+    </nav>
+
+    <!-- head section -->
+
+
+    <section class="intro ">
+        <div class="containner py-5 " >
+            <div class="row justify-content-center align-items-center p-4 ">
+                <h1 class="text-center text-light fw-700 title col-12 mb-4"style="z-index:3;">Login/Register</h1>
+                <a href="" class=" a1 fs-5 col-2 col-md-1">Home</a>
+                <span class="fs-5 fw-800 text-light col-lg-1 col-2 col-md-1 text-center">•</span>
+                <span class="text-light fs-5 col-6 col-md-3 col-lg-2" style="z-index:3;">Login / Register</span>  
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- forms -->
+    <div class="containner my-5">
+        <div class="row justify-content-evenly ">
+            <div class="col-4 text-center Form">
+                <h2 class="text-start fw-normal mb-3">LogIn</h2>
+                <form action="" id="signForm">
+                    <label for="name" class="lab col-12 text-start mx-auto mb-2 fw-lighter  ">Your Name</label>
+                    <input type="text" placeholder=" First and Last name" class="inp col-12 text-start mx-auto mb-2 " id="name" tabindex="0" autofocus>
+                    
+                    
+                    <label for="Email" class=" lab col-12 text-start mx-auto mb-2 fw-lighter ">Email</label>
+                    <input type="email" class="inp col-12 text-start mx-auto mb-2 " id="Email" tabindex="1">
+                    
+                    
+                    <label for="Password" class=" lab col-12 text-start mx-auto mb-2 fw-lighter ">Password</label>
+                    <input type="password" class="inp col-12 text-start mx-auto mb-2 " id="Password" placeholder=" at least 8 characters" tabindex="2">
+                    
+                    
+                    
+                    <label for="Re-Enter Password" class=" lab col-12 text-start mx-auto mb-2 fw-lighter ">Re-Enter Password</label>
+                    <input type="password" class="inp col-12 text-start mx-auto mb-2 " id="Re-enterPassword" tabindex="3">
+
+                    <div class="text-start">
+                        <button type="submit" class="btn btn-danger px-3 py-3 col-12 col-md-3  mx-auto mt-3 mb-4  fs-6 btn-sm submit fw-lighter" id="sButton"> <small>
+                        Register</small>
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+
+            <!-- sign in  -->
+            <div class="col-4 text-center Form">
+                <h2 class="text-start fw-normal mb-3">Sign in</h2>
+                <form action="" id="logForm">
+
+
+                    <label for="Email" class=" lab col-12 text-start mx-auto mb-2 fw-lighter ">Email</label>
+                    <input type="email" class="inp col-12 text-start mx-auto mb-2 " id="logEmail" tabindex="0">
+
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="Password" class=" lab col-12 text-start mx-auto mb-2 fw-lighter ">Password </label>
+                        </div>
+                    </div>
+                    <input type="password" class="inp col-12 text-start mx-auto mb-2 " id="logPassword" tabindex="1">
+
+
+                    <div class="text-start">
+
+                        <button type="submit" class="btn btn-danger col-12 px-4 py-3 fw-lighter
+                        col-md-4 mx-auto mt-4 mb-4  fs-6 btn-sm submit "
+                            id="logButton"> <small>
+                                Sign In</small>
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- section -->
+     <section class="subfooter ">
+        <div class="containner p-5">
+            <div class="row justify-content-center mb-3">
+                <h3 class="text-center text-white fw-800"style="z-index:3;">Subscribe</h3>
+            </div>
+            <div class="row mb-3">
+                <p class="text-center text-white fw-700" style="z-index:3;">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing
+                    <br> elit nihil saepe libero sit odio obcaecati veniam.
+                </p>
+            </div>
+            <div class="row mb-3">
+                <form action="" class="text-center "style="z-index:3;">
+                    <input type="email" name="" id="" class="input" placeholder="Enter Email">
+                    <button class="send">send</button>
+                </form>
+            </div>
+        </div>
+     </section>
+
+     <!-- footer -->
+      <footer>
+        <div class="containner">
+            <div class="row justify-content-evenly">
+                <div class="col-3 text-light lh-lg">
+                    <h4>About Us</h4>
+                    <p style="color: #999999;">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium animi, odio beatae aspernatur natus recusandae quasi magni eum voluptatem nam!
+                    </p>
+                </div>
+                <div class="col-3 text-light">
+                    <h4 class="mb-4">Navgation</h4>
+                    <ul class="footer-ul">
+                        <li class="list"><a href="">Podcast</a></li>
+                        <li class="list"><a href="">Service</a></li>
+                        <li class="list"><a href="">About US</a></li>
+                        <li class="list"><a href="">Blog</a></li>
+                        <li class="list"><a href="">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 text-light">
+                    <h4>Subscribe</h4>
+                    <p style="color: #999999;">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quibusdam!
+                    </p>
+                    <form action="">
+                        <input type="email" name="" id="" class="inputx" placeholder="Enter Email">
+                        <button class="end">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </footer>
+
+
+
+
+
+
+
+          
+
+    <!-- bootsrap -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js
+   "></script>
+    <script>
+        function showSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'none'
+        }
+    </script>
+    <script src="./js/register-login.js"></script>
+</body>
+</html>
